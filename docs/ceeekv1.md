@@ -696,28 +696,14 @@ You can set the office hours timetable from **Settings > Miscellaneous > Office 
 
 Knowledge base articles provide instant answers to customers to help reduce customer support volume. To manage the articles, go to **Settings > Articles**. Articles support HTML code, which can be used to add images, videos, and other content. Here are some HTML code examples that you can use:
 
-| Name | Code |
-| --- | --- |
-| Button | 
-<a href="https://www.google.com" target="\_blank" class="sb-rich-btn sb-btn">Click here</a>
+| Name                  | Code                                                                                                                                                                                                                                             |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Button                | `<a href="https://www.google.com" target="_blank" class="sb-rich-btn sb-btn">Click here</a>`                                                                                                                                                       |
+| Image                 | `<img src="https://via.placeholder.com/1500x600" />`                                                                                                                                                                                              |
+| Image with lightbox   | `<div class="sb-image"><img src="https://via.placeholder.com/1500x600" class="sb-image" /></div>`                                                                                                                                                  |
+| Video                 | `<video controls><source src="video.mp4" type="video/mp4"></video>`                                                                                                                                                                               |
+| YouTube and Vimeo     | Enter the **embed code** provided by YouTube or Vimeo                                                                                                                                                                                             |
 
- |
-| Image | 
-
-<img src="https://via.placeholder.com/1500x600" />
-
- |
-| Image with lightbox | 
-
-<div class="sb-image"><img src="https://via.placeholder.com/1500x600" class="sb-image" /></div>
-
- |
-| Video | 
-
-<video controls><source src="video.mp4" type="video/mp4"></video>
-
- |
-| YouTube and Vimeo | Enter the **embed code** provided by YouTube or Vimeo |
 
 #### Display articles
 
