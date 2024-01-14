@@ -38,7 +38,7 @@ If you migrate the chat to a new domain / URL you need to edit the **config.php*
 
 For performance reasons, you may want to load the minified main.js file: **[SUPPORT-BOARD-URL]/js/min/main.min.js**. Please note that if you contact us for support you will need to load again the non-minified version.
 
-To display the chat on your website go to https://cloud.board.support/account/?tab=installation and copy the embed code, then paste it into your website pages. If you are using WordPress, you can download the Ceeek V1 Cloud plugin [here](https://wordpress.org/plugins/support-board-cloud/).
+To display the chat on your website go to https://www.ceeek.com/account/?tab=installation and copy the embed code, then paste it into your website pages. 
 
 ------
 
@@ -66,9 +66,7 @@ To activate Ceeek V1 and enable all of the features (including updates and more 
 
 #### Apps installation
 
-To download, install, and activate the apps go to the **Settings > Apps** area of Ceeek V1 and enter the Envato purchase code or license key.
-
-[Find your Envato purchase code](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-)
+To download, install, and activate the apps go to Ceeek.com purchase code or license key.
 
 ------
 
@@ -82,7 +80,7 @@ To download, install, and activate the apps go to the **Settings > Apps** area o
 
 #### Manual updates
 
-To manually update Ceeek V1 and the apps go to https://board.support/synch/manual.php.
+To manually update Ceeek V1 and the apps go to https://www.ceeek.com
 
 ------
 
@@ -140,7 +138,7 @@ If none of the previous solutions work or you can't change the server settings, 
 
 #### Unable to install an app
 
-Your server/hosting has file and folder permissions issues, or a firewall is blocking our website. You can verify it from **Settings > Miscellaneous > Check Requirements** (keep in mind that even if it's all green, you still have a server problem, it just isn't caught by the requirements checks). You can solve the issue by installing the apps manually. Go here for the manual installation: https://board.support/synch/manual.php
+Your server/hosting has file and folder permissions issues, or a firewall is blocking our website. You can verify it from **Settings > Miscellaneous > Check Requirements** (keep in mind that even if it's all green, you still have a server problem, it just isn't caught by the requirements checks). You can solve the issue by installing the apps manually. ask Ceeek for the manual installation.
 
 #### Blocking zoom on iOS devices
 
@@ -204,7 +202,7 @@ If you have accidentally deleted all your admin and agent accounts and you can n
 
 #### Server down
 
-If your server and/or website goes down or suddenly stops working after a few minutes of chat usage, the issue could be related to your server's Firewall. This usually happens as a result of an IP Address Banning (Fail2Ban) or Web Application Firewall (ModSecurity) settings. The multiple AJAX requests from the chat to the database are recognized as a "server attack" and so your server places a temporary block on your IP address. This issue should only affect you and/or your developers; visitors/users should not be affected. To confirm whether or not this is the issue, use a VPN service like [Hotspot Shield](https://www.hotspotshield.com/). When the server goes down, activate the VPN to change your IP and try accessing your website again. If the website works normally, the issue is confirmed. To solve it temporarily disable fail2ban or contact your hosting support for additional support.
+If your server and/or website goes down or suddenly stops working after a few minutes of chat usage, the issue could be related to your server's Firewall. This usually happens as a result of an IP Address Banning (Fail2Ban) or Web Application Firewall (ModSecurity) settings. The multiple AJAX requests from the chat to the database are recognized as a "server attack" and so your server places a temporary block on your IP address. This issue should only affect you and/or your developers; visitors/users should not be affected. To confirm whether or not this is the issue, use a VPN service. When the server goes down, activate the VPN to change your IP and try accessing your website again. If the website works normally, the issue is confirmed. To solve it temporarily disable fail2ban or contact your hosting support for additional support.
 
 #### Disable chat via JS
 
@@ -321,7 +319,7 @@ Rich messages are special messages with interactive features like buttons, dropd
 | List double   | `[list values="A:X,B:Y,C:Z"]`                                | Text list with titles.                                       |
 | List image    | `[list-image values="URL:A,URL:B,URL:C"]`                    | Text list with titles and images.                            |
 | Table         | `[table header="A,B,C" values="A:B:C,A:B:C,A:B:C"]`          | Table.                                                       |
-| Button        | `[button link="https://board.support" name="Click here" target="_blank" style="link"]` | Display a link or open an article. The attribute **target="_blank"** is optional and open the link in a new window. The attribute **style="link"** is optional and change the button design. To open an article on click the link value must be **#article-ID**, replace ID with the article ID. |
+| Button        | `[button link="https://www.ceeek.com" name="Click here" target="_blank" style="link"]` | Display a link or open an article. The attribute **target="_blank"** is optional and open the link in a new window. The attribute **style="link"** is optional and change the button design. To open an article on click the link value must be **#article-ID**, replace ID with the article ID. |
 | Video         | `[video type="youtube" id="0TImic4N1ko" height="350"]`       | Display a YouTube or Vimeo video. The value of the attribute **type** can be **youtube** or **vimeo**. The attribute **id** is the ID of the video, get it from the URL. The attribute **height** is optional and sets the video height in px. |
 | Image         | `[image url="https://board.support/media/admin.png"]`        | Image.                                                       |
 | Share         | `[share fb="https://www.ceeek.com/" tw="https://www.ceeek.com/" li="https://www.ceeek.com/" pi="https://www.ceeek.com/" wa="https://www.ceeek.com/"]` | Social share buttons.                                        |
@@ -778,29 +776,7 @@ To activate the email piping go to **Settings > Notifications > Email piping** a
 
 - Email piping requires **php5-imap** module (IMAP module). If it's not installed on your server you can install it with the command **apt-get install php5-imap**. If you have issues contact your hosting/server support.
 
-- The
-
-   
-
-  Delimiter
-
-   
-
-  option add a text at the top of all emails:
-
-   
-
-  \### Please type your reply above this line ###
-
-  . This text tells Ceeek V1 to delete all the content below it and it's usefult to cut out all of the reply quotes. Activate it if you see duplicated messages in the chat. If this option is active, you and your users can not use the string
-
-   
-
-  \###
-
-   
-
-  in the emails.
+- The  **Delimiter** option add a text at the top of all emails: ### Please type your reply above this line ###. This text tells Ceeek V1 to delete all the content below it and it's usefult to cut out all of the reply quotes. Activate it if you see duplicated messages in the chat. If this option is active, you and your users can not use the string### in the emails.
 
 - Email attachments are supported.
 
@@ -2010,17 +1986,7 @@ The settings below are related to the WhatsApp app.
 
 - To verify the integration, simply go to [https://developers.facebook.com](https://developers.facebook.com/) and select your app. From there, click on "WhatsApp" in the left menu and then select "API Setup". Copy the **Phone number ID** and paste it into **Ceeek V1 > Settings > WhatsApp > Cloud API settings > Phone number ID.** Enter the desired phone number in the "To" field, such as your personal WhatsApp number, and send a test message. Check your WhatsApp account and send a reply, which should then appear in Ceeek V1. To reply to the test number from Ceeek V1, copy the "Temporary access token" and paste it in **Ceeek V1 > Settings > WhatsApp > Cloud API settings > Token**. 
 
-- To activate the WhatsApp integration for all phone numbers and add a live phone number, refer to the following guidelines.
-
-  In
-
-   
-
-  Ceeek V1 > Settings > WhatsApp > Cloud API settings > Token
-
-   
-
-  enter the permanent access token, follow the instructions below for getting it.
+- To activate the WhatsApp integration for all phone numbers and add a live phone number, refer to the following guidelines. In  ** Ceeek V1 > Settings > WhatsApp > Cloud API settings > Token**  enter the permanent access token, follow the instructions below for getting it.
 
   - Visit [https://business.facebook.com](https://business.facebook.com/) and go to **Left menu > Settings > Business settings**, then go to **Users > System Users** to view your admin system user, or create a new one. Open the user and click **Add Assets**, then select the app used for the WhatsApp API integration and check **Develop App**, or **Full control**. The system user needs to be an admin. If you do not see the option, click **Business settings**.
   - Click **Left menu > Apps** and under **Select Assets** and choose your app, enable **Develop App**, or **Full control** and save.
@@ -2457,7 +2423,7 @@ ARMEMBER
 
 ## ARMember
 
-The settings below are related to the ARMember app.
+The settings below are related to the ARMember app. 
 
 ------
 
